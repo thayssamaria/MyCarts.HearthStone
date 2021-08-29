@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "3de1e9d8-4033-499e-aa7d-2ff60920d757",
+		"name": "MyCarts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nome\": \"Cavaleiro_das_Sombras2\",\r\n    \"descricao\": \"Cavaleiro tomado pelas sombras\",\r\n    \"ataque\": 8,\r\n    \"defesa\": 5,\r\n    \"tipo\":\"MAGIA\",\r\n    \"classe\":\"CACADOR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carta/cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carta/consultarid/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"consultarid",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carta/deletar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"deletar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carta/consultarnome/Cavaleiro_das_Sombras",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"consultarnome",
+						"Cavaleiro_das_Sombras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COnsultar Classe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carta/consultarClasse/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"consultarClasse",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COnsutlar Tipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carta/consultartipo/CRIATURA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carta",
+						"consultartipo",
+						"CRIATURA"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
